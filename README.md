@@ -15,3 +15,88 @@ Se ha solicitado crear un software para gestionar la creación de personajes en 
 
 - **Gestión de habilidades**: Implementar validaciones que aseguren que no se puedan agregar habilidades duplicadas ni eliminar habilidades que no existan.
 - **Pruebas unitarias (PU)**: Desarrollar pruebas para validar el correcto funcionamiento de las funcionalidades, asegurando que tanto la distribución de puntos como la gestión de habilidades sean precisas y robustas.
+
+### Clases
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Personaje {
+    private String nombre;
+    private int agilidad;
+    private int fuerza;
+    private int inteligencia;
+    private int puntosRestantes;
+    private List<String> habilidades;
+
+    // Constructor
+    public Personaje(String nombre, int puntosIniciales) {
+        this.nombre = nombre;
+        this.agilidad = 0;
+        this.fuerza = 0;
+        this.inteligencia = 0;
+        this.puntosRestantes = puntosIniciales;
+        this.habilidades = new ArrayList<>();
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getAgilidad() {
+        return agilidad;
+    }
+
+    public void setAgilidad(int agilidad) {
+        this.agilidad = agilidad;
+    }
+
+    public int getFuerza() {
+        return fuerza;
+    }
+
+    public void setFuerza(int fuerza) {
+        this.fuerza = fuerza;
+    }
+
+    public int getInteligencia() {
+        return inteligencia;
+    }
+
+    public void setInteligencia(int inteligencia) {
+        this.inteligencia = inteligencia;
+    }
+
+    public int getPuntosRestantes() {
+        return puntosRestantes;
+    }
+
+    public void setPuntosRestantes(int puntosRestantes) {
+        this.puntosRestantes = puntosRestantes;
+    }
+
+    public List<String> getHabilidades() {
+        return habilidades;
+    }
+
+    public void setHabilidades(List<String> habilidades) {
+        this.habilidades = habilidades;
+    }
+
+    public String mostrarAtributos() {
+    }
+
+    public int mostrarPuntosRestantes() {
+    }
+
+    public List<String> mostrarHabilidades() {
+    }
+}
+
+
+```
