@@ -18,6 +18,8 @@ Se ha solicitado crear un software para gestionar la creación de personajes en 
 
 ### Clases
 
+#### Personaje
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
@@ -97,6 +99,32 @@ public class Personaje {
     public List<String> mostrarHabilidades() {
     }
 }
-
-
 ```
+
+#### GestorAtributos
+
+```java
+
+public class GestorAtributos {
+    private Personaje personaje;
+
+    public GestorAtributos() {
+    }
+
+    public void setPersonaje(Personaje personaje) {
+        this.personaje = personaje;
+    }
+
+    public void asignarPuntos(String atributo, int puntos) {
+    }
+    public void editarPuntos(String atributo, int puntos) {
+    }
+    public void quitarPuntos(String atributo, int puntos) {
+    }
+    public void agregarHabilidad(String habilidad) {
+    }
+    public void removerHabilidad(String habilidad) {
+    }
+}
+```
+
